@@ -1,4 +1,5 @@
 package fonte;
+//Imprime na tela
 
 public class Print {
     public void prints(String msg){
