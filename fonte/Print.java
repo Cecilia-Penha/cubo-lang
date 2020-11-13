@@ -2,15 +2,15 @@ package fonte;
 //Imprime na tela
 
 public class Print {
-    public void prints(String msg){
+    public void printS(String msg){
         System.out.println(msg);
     }
 
-    public void printd(double msg){
+    public void printD(double msg){
         System.out.println(msg);
     }
 
-    public void printi(int msg){
+    public void printI(int msg){
         System.out.println(msg);
     }
 }
