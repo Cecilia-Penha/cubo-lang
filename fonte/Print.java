@@ -9,8 +9,5 @@ public class Print {
     public void printD(double msg){
         System.out.println(msg);
     }
-
-    public void printI(int msg){
-        System.out.println(msg);
-    }
+  
 }
