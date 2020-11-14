@@ -1,4 +1,5 @@
 package fonte;
+// Método condicional
 
 public class Cond {
     public void igualD(double a, double b){
