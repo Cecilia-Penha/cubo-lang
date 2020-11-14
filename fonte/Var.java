@@ -17,7 +17,7 @@ public class Var {
         this.s = txt;
     }
 
-    public String setString(){
+    public String getString(){
         return this.s;
     }
 }
