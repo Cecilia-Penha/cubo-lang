@@ -19,6 +19,10 @@ public class Main {
         }
         Print imprime = new Print();
         Var[] variavel = new Var[20];
+        Cond testa = new Cond();
+        Math op = new Math();
+
+       
 
     }
 }
