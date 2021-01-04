@@ -2,28 +2,28 @@ package fonte;
 //Operações básicas
 
 public class Math {
-    public void add(double x, double y){
+    public double add(double x, double y){
         double xy = x + y;
-        System.out.println(xy);
+        return(xy);
     }
 
-    public void sub(double x, double y){
+    public double sub(double x, double y){
         double xy = x - y;
-        System.out.println(xy);
+        return(xy);
     }
 
-    public void mult(double x, double y){
+    public double mult(double x, double y){
         double xy = x * y;
-        System.out.println(xy);
+        return(xy);
     }
 
-    public void div(double x, double y){
+    public double div(double x, double y){
         double xy = x / y;
-        System.out.println(xy);
+        return(xy);
     }
     
-    public void mod(double x, double y){
+    public double mod(double x, double y){
         double xy = x % y;
-        System.out.println(xy);
+        return(xy);
     }
 }
