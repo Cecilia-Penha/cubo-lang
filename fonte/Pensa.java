@@ -2,13 +2,11 @@ package fonte;
 
 public class Pensa {
     public int i = 0;
-    public char op;
     Print imprime = new Print();
     Var[] variavel = new Var[20];
     Cond testa = new Cond();
     Math math = new Math();
     String[] text;
-    double result, num1, num2;
     
     public void leia(){
 
@@ -28,9 +26,23 @@ public class Pensa {
         for(int i = 0; i < text.length; i++){
             if(text[i] == "break")
                 break;
-
+            if(text[i] == "var"){
+                this.startVar(l);
+            }
             if (text[i] == "conta"){
                 this.startMath(l);
+            }
+            if(text[i] == "mostra"){
+                this.startImprime(l);
+            }
+            if(text[i] == "primo"){
+                this.startPrimo(l);
+            }
+            if(text[i] == "media"){
+                this.startMedia(l);
+            }
+            if(text[i] == "testa"){
+                this.startCond(l);
             }
         }
     }
@@ -89,7 +101,32 @@ public class Pensa {
 
         }
         return valor;
+    }
+    public void startImprime(String l){
+        boolean procura = false;
+        for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ";"){
+                break;
+            }
+            if(procura = true){
+                imprime.printS(this.text[i]);
+            }
+            if(this.text[i] == "&"){
+                procura = true;
+            }
+        }
+    }
+    public void startCond(String l){
 
+    }
+    public void startPrimo(String l){
+
+    }
+    public void startMedia(String l){
+
+    }
+    public void startVar(String l){
+        
     }
 
 }
