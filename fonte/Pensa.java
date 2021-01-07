@@ -41,9 +41,13 @@ public class Pensa {
             if(text[i] == "media"){
                 this.startMedia(l);
             }
-            if(text[i] == "testa"){
-                this.startCond(l);
+            if(text[i] == "testaN"){
+                this.startCondN(l);
             }
+            if(text[i] == "testaS"){
+                this.startCondS(l);
+            }
+
         }
     }
     public void startMath(String l){
@@ -98,7 +102,6 @@ public class Pensa {
             if(this.text[i] == ";"){
                 break;
             }
-
         }
         return valor;
     }
@@ -116,8 +119,29 @@ public class Pensa {
             }
         }
     }
-    public void startCond(String l){
-
+    public void startCondN(String l){
+        boolean procura = false;
+        for(int i = 0; i < l.length(); i++){
+            if(procura = true){
+                testa.igualD(Integer.parseInt(text[i]),Integer.parseInt(text[i+1]));
+                break;
+            }
+            if(text[i] == "$"){
+                procura = true;
+            }
+        }
+    }
+    public void startCondS(String l){
+        boolean procura = false;
+        for(int i = 0; i < l.length(); i++){
+            if(procura = true){
+                testa.igualS(text[i],text[i+1]);
+                break;
+            }
+            if(text[i] == "&"){
+                procura = true;
+            }
+        }
     }
     public void startPrimo(String l){
 
