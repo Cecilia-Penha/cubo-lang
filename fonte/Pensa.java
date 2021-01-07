@@ -93,15 +93,31 @@ public class Pensa {
         boolean procuraValor = false;
         double valor = 0;
         for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ";"){
+                break;
+            }
             if(procuraValor == true){
                 valor = Integer.parseInt(this.text[i]);
             }
             if(this.text[i] == "+" || this.text[i] == "-" || this.text[i] == "*" || this.text[i] == "/" || this.text[i] == "%"){
                 procuraValor = true;
             }
+        }
+        return valor;
+    }
+    public double encontraNumPrimo(String l){
+        boolean procuraValor = false;
+        double valor = 0;
+        for(int i = 0; i < l.length(); i++){
             if(this.text[i] == ";"){
                 break;
             }
+            if(procuraValor == true){
+                valor = Integer.parseInt(this.text[i]);
+            }
+            if(this.text[i] == "$"){
+                procuraValor = true;
+            }  
         }
         return valor;
     }

@@ -13,7 +13,8 @@ public class Cubo {
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
                 System.out.println(line);
-            }   
+            }
+            pensa.leia();  
             scan.close();
         }catch(Exception e){
             System.out.println("Erro");
