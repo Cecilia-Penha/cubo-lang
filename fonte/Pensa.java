@@ -138,9 +138,11 @@ public class Pensa {
     public void startCondN(String l){
         boolean procura = false;
         for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ";"){
+                break;
+            }
             if(procura = true){
                 testa.igualD(Integer.parseInt(text[i]),Integer.parseInt(text[i+1]));
-                break;
             }
             if(text[i] == "$"){
                 procura = true;
@@ -150,9 +152,11 @@ public class Pensa {
     public void startCondS(String l){
         boolean procura = false;
         for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ";"){
+                break;
+            }
             if(procura = true){
                 testa.igualS(text[i],text[i+1]);
-                break;
             }
             if(text[i] == "&"){
                 procura = true;
