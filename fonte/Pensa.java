@@ -70,7 +70,7 @@ public class Pensa {
     }
     public double encontraNum1(String l){
         boolean procuraValor = false;
-        int valor = 0;
+        double valor = 0;
         for(int i = 0; i < l.length(); i++){
             if(this.text[i] == "+" || this.text[i] == "-" || this.text[i] == "*" || this.text[i] == "/" || this.text[i] == "%"){
                 break;
@@ -87,7 +87,7 @@ public class Pensa {
     }
     public double encontraNum2(String l){
         boolean procuraValor = false;
-        int valor = 0;
+        double valor = 0;
         for(int i = 0; i < l.length(); i++){
             if(procuraValor == true){
                 valor = Integer.parseInt(this.text[i]);
@@ -126,7 +126,7 @@ public class Pensa {
 
     }
     public void startVar(String l){
-        
+
     }
 
 }
