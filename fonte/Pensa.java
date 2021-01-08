@@ -39,7 +39,7 @@ public class Pensa {
                 this.startPrimo(l,this.encontraNumPrimo(l));
             }
             if(text[i] == "media"){
-                this.startMedia(l);
+                this.startMedia(l,this.encontraMedia1(l),this.encontraMedia2(l));
             }
             if(text[i] == "testaN"){
                 this.startCondN(l);
@@ -121,6 +121,38 @@ public class Pensa {
         }
         return valor;
     }
+    public double encontraMedia1(String l){
+        boolean procuraValor = false;
+        double valor = 0;
+        for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ","){
+                break;
+            }
+            if(procuraValor == true){
+                valor = Integer.parseInt(this.text[i]);
+            }
+            if(this.text[i] == "$"){
+                procuraValor = true;
+            }
+        }
+        return valor;
+    }
+    public double encontraMedia2(String l){
+        boolean procuraValor = false;
+        double valor = 0;
+        for(int i = 0; i < l.length(); i++){
+            if(this.text[i] == ";"){
+                break;
+            }
+            if(procuraValor == true){
+                valor = Integer.parseInt(this.text[i]);
+            }
+            if(this.text[i] == ","){
+                procuraValor = true;
+            }
+        }
+        return valor;
+    }
     public void startImprime(String l){
         boolean procura = false;
         for(int i = 0; i < l.length(); i++){
@@ -178,8 +210,9 @@ public class Pensa {
         }
 
     }
-    public void startMedia(String l){
-
+    public void startMedia(String l, double valor1, double valor2){
+        double media = (valor1 + valor2)/2;
+        System.out.println(media);
     }
     public void startVar(String l){
 
