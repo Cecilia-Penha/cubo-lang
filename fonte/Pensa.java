@@ -36,7 +36,7 @@ public class Pensa {
                 this.startImprime(l);
             }
             if(text[i] == "primo"){
-                this.startPrimo(l);
+                this.startPrimo(l,this.encontraNumPrimo(l));
             }
             if(text[i] == "media"){
                 this.startMedia(l);
@@ -163,7 +163,19 @@ public class Pensa {
             }
         }
     }
-    public void startPrimo(String l){
+    public void startPrimo(String l, double valor){
+        int n = 0;
+        for(int i = 0; i < l.length(); i++){
+            if(valor%i == 0){
+                n++;
+            }
+            if(n>2){
+                System.out.println("não é primo");
+            }
+            else{
+                System.out.println("é primo");
+            }
+        }
 
     }
     public void startMedia(String l){
