@@ -1,4 +1,5 @@
 package fonte;
+// Adiciona funções do interpretador
 
 public class Pensa {
     public int i = 0;
