@@ -4,7 +4,7 @@ package fonte;
 public class Pensa {
     public int i = 0;
     Print imprime = new Print();
-    Var[] variavel = new Var[20];
+
     Cond testa = new Cond();
     Math math = new Math();
     String[] text;
@@ -27,9 +27,6 @@ public class Pensa {
         for(int i = 0; i < text.length; i++){
             if(text[i] == "break")
                 break;
-            if(text[i] == "var"){
-                this.startVar(l);
-            }
             if (text[i] == "conta"){
                 this.startMath(l);
             }
@@ -37,7 +34,7 @@ public class Pensa {
                 this.startImprime(l);
             }
             if(text[i] == "primo"){
-                this.startPrimo(l,this.encontraNumPrimo(l));
+                this.startPrimo(this.encontraNumPrimo(l));
             }
             if(text[i] == "media"){
                 this.startMedia(l,this.encontraMedia1(l),this.encontraMedia2(l));
@@ -163,7 +160,7 @@ public class Pensa {
             if(procura = true){
                 imprime.printS(this.text[i]);
             }
-            if(this.text[i] == "&"){
+            if(this.text[i] == ":"){
                 procura = true;
             }
         }
@@ -196,9 +193,9 @@ public class Pensa {
             }
         }
     }
-    public void startPrimo(String l, double valor){
+    public void startPrimo(double valor){
         int n = 0;
-        for(int i = 0; i < l.length(); i++){
+        for(int i = 0; i < valor; i++){
             if(valor%i == 0){
                 n++;
             }
@@ -215,8 +212,4 @@ public class Pensa {
         double media = (valor1 + valor2)/2;
         System.out.println(media);
     }
-    public void startVar(String l){
-
-    }
-
 }
