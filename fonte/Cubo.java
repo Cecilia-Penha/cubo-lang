@@ -8,21 +8,16 @@ import java.io.File;
 public class Cubo {
     public static void main(String[]args){
         try{
-            String [] text = new String[2000];
-            int amount = 0;
             File file = new File("teste.txt");
             Scanner scan = new Scanner(file);
-            Pensa pensa = new Pensa();
+            
             
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
-                text[amount++] = line;
+                System.out.println(line);
             }
-            pensa.leia();  
+              
             scan.close();
-            for(int i = 0; i < amount; i++){
-                System.out.println("Linha" + i + ": " + text[i]);
-            }
         }catch(Exception e){
             System.out.println("Erro");
         }
