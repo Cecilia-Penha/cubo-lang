@@ -1,12 +1,11 @@
 package fonte;
 // Adiciona funções do interpretador
 
-public class Pensa {
+class Pensa{
     public int i = 0;
-    Print imprime = new Print();
-
-    Cond testa = new Cond();
-    Math math = new Math();
+    fonte.Print imprime = new Print();
+    fonte.Cond testa = new Cond();
+    fonte.Op math = new Op();
     String[] text;
     
     public void leia(){

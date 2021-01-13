@@ -1,7 +1,7 @@
 package fonte;
 //Operações básicas
 
-public class Math {
+public class Op {
     public double add(double x, double y){
         double xy = x + y;
         return(xy);

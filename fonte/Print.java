@@ -1,7 +1,8 @@
 package fonte;
 //Imprime na tela
 
-public class Print {
+class Print {
+    public Print imprime = new Print();
     public void printS(String msg){
         System.out.println(msg);
     }
