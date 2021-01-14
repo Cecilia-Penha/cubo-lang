@@ -1,7 +1,7 @@
 package fonte;
 // Método condicional
 
-public class Cond {
+class Cond {
     public void igualD(double a, double b){
         if (a == b){
             System.out.println("igual");

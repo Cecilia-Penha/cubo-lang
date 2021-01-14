@@ -1,12 +1,14 @@
 package fonte;
-// Adiciona funções do interpretador
+import java.util.*;
+import fonte.*;
 
+// Adiciona funções do interpretador
 class Pensa{
-    public int i = 0;
-    fonte.Print imprime = new Print();
-    fonte.Cond testa = new Cond();
-    fonte.Op math = new Op();
-    String[] text;
+    private int i = 0;
+    private Print imprime = new Print();
+    private Cond testa = new Cond();
+    private Op math = new Op();
+    private String[] text;
     
     public void leia(){
 
