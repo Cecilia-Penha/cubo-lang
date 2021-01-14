@@ -5,7 +5,7 @@ import java.io.File;
 //Cecília Penha - Programação 1 
 //ceciliapenha3@gmail.com
 
-public class Cubo extends Pensa {
+public class Cubo{
     public static void main(String[]args){
         try{
             File file = new File("teste.txt");

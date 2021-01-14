@@ -1,0 +1,11 @@
+Main-Class: fonte.Cubo
+Name: fonte/Cubo.class
+Java-Bean: True
+
+
+
+
+
+
+
+
