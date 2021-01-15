@@ -5,9 +5,14 @@ Linguagem desenvolvida por Cecília Penha (ceciliapenha3@gmail.com)
 
 ## Iniciando o interpretador
 
+Utilize o arquivo *teste.txt*.
 Para começar, digite *start* e pressione Enter para entrar em uma nova linha.
 Para indicar o fim de uma linha, digite *espaço* + *;*.
 Para terminar, digite *break*.
+
+## Executar
+
+Para executar o interpretador, digite *java -jar Cubo.jar*.
 
 ## Funções da linguagem
 
